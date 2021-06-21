@@ -1,0 +1,59 @@
+{
+  "name": "nuxtexpress-quest",
+  "version": "0.0.1",
+  "description": "",
+  "contributors": [
+    {
+      "name": "Anton Merkulov",
+      "email": "genttoxa@gmail.com"
+    },
+    {
+      "name": "Ivan Kunisov",
+      "email": "kunisov.ivan@mail.ru"
+    }
+  ],
+  "private": true,
+  "scripts": {
+    "dev": "backpack dev",
+    "build": "nuxt build && backpack build",
+    "start": "cross-env NODE_ENV=production node build/main.js",
+    "precommit": "npm run lint",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "resolutions": {
+    "svgo": "1.3.0"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.6.0",
+    "body-parser": "^1.19.0",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.14.1",
+    "express": "^4.16.4",
+    "express-session": "^1.17.0",
+    "fs": "0.0.1-security",
+    "markdown-it": "^10.0.0",
+    "markdown-it-attrs": "^3.0.1",
+    "nuxt": "latest",
+    "nuxt-session": "^1.0.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "backpack-core": "^0.8.4",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^6.0.1",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0"
+  }
+}
